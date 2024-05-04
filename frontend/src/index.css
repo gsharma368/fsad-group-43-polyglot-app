@@ -1,0 +1,625 @@
+
+/* NAVBAR STYLING */
+
+*{
+  margin: 0;
+  }
+  
+  .link-button {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  }
+  
+  nav {
+  background-color: #333;
+  padding: 10px 0;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  }
+  
+  ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  }
+  
+  li {
+  display: inline-block;
+  margin: 0 10px;
+  }
+  
+  a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  }
+  
+  a:hover {
+  background-color: #555;
+  }
+  
+  @media only screen and (max-width: 600px) {
+  nav {
+  padding: 5px 0;
+  }
+  
+  li {
+  display: block;
+  margin: 10px 0;
+  }
+  }
+  
+  
+  
+  /* LOGIN STYLLING */
+  /* index.css */
+  .auth-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  }
+  
+  h2 {
+  margin-top: 0;
+  }
+  
+  .form-group {
+  margin-bottom: 15px;
+  }
+  
+  label {
+  display: block;
+  font-weight: bold;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  }
+  
+  button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+  background-color: #0056b3;
+  }
+  
+  @media only screen and (max-width: 600px) {
+  .auth-container {
+  padding: 10px;
+  }
+  
+  input[type="email"],
+  input[type="password"],
+  button {
+  padding: 8px;
+  }
+  }
+  
+  /* REGISTRATION STYLLING */
+  /* + */
+  /* update user */
+  
+  .auth-container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  }
+  
+  .auth-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+  }
+  
+  .form-group {
+  margin-bottom: 15px;
+  }
+  
+  .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+  }
+  
+  button[type="submit"] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+  background-color: #0056b3;
+  }
+  
+  
+  
+  /* FOOTER STYKLING */
+  .footer{
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  }
+  
+  
+  
+  
+  
+  
+  /* PAGE NOT FOUND STYLING */
+  /* index.css */
+  .not-found-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  text-align: center;
+  }
+  
+  h2 {
+  color: #d9534f;
+  }
+  
+  p {
+  color: #333;
+  }
+  
+  @media only screen and (max-width: 600px) {
+  .not-found-container {
+  padding: 10px;
+  }
+  }
+  
+  /* ERROR STYLING */
+  .error-message {
+  color: red;
+  text-align: center;
+  }
+
+
+  
+  
+  
+  /*USER MANAGEMENT PAGE*/
+  .user-management-container {
+  max-width: 800px;
+  margin: 0px auto 60px auto;
+  padding: 20px;
+  
+  }
+  
+  h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+  }
+  
+  table {
+  width: 100%;
+  border-collapse: collapse;
+  }
+  
+  th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  }
+  
+  th {
+  background-color: #f2f2f2;
+  }
+  
+  tr:nth-child(even) {
+  background-color: #f9f9f9;
+  }
+  
+  tr:hover {
+  background-color: #f2f2f2;
+  }
+  
+  button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  }
+  
+  .reg-button {
+  padding: 15px;
+  margin: 10px auto;
+  }
+  
+  button:hover {
+  background-color: #0056b3;
+  }
+  
+  .delete-button {
+  background-color: rgb(255, 9, 9);
+  color: white;
+  margin-bottom: 10px;
+  font-weight: 400;
+  }
+  
+  
+  /**PROFILE STYLING"
+  /* index.css */
+  
+  .profile-page-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  text-align: left;
+  }
+  
+  .profile-page-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+  }
+  
+  .profile-page-container p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  }
+  
+  .profile-page-container button {
+    background-color: white; 
+    color: rgb(0, 0, 0); 
+    border: 2px solid #008CBA;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  .profile-page-container button:hover {
+    background-color: #008CBA;
+    color: white;
+    text-decoration: none;
+  }
+
+  h1 {
+    text-align: center;
+  }
+  
+
+
+
+
+    
+  /*MASTER COURSES PAGE*/
+  .master-course-container {
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 100px;
+
+    
+  }
+  
+  
+  .master-page-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    }
+    
+    .master-page-container p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    }
+
+  .card {
+    /* Add shadows to create the "card" effect */
+    max-width: 800px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: auto;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
+
+
+
+.card-style {
+background-color: white;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+border-radius: 10px;
+color: black;
+text-align: left;
+}
+.card-style:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.2);
+}
+
+.image-style {  
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+.card-content {
+  padding: 15px;
+  height: 90px;
+  text-overflow: ellipsis;
+  }
+
+.card-grid {
+  margin: auto;
+  margin-left: 10%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
+  }
+
+  .card-image-style{
+  display: block;
+  }
+
+
+
+    /**Course Pages STYLING"
+  /* index.css */
+  
+  .course-page-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: left;
+    }
+    
+
+  
+
+
+    .question-style {
+      background-color: white;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      color: black;
+      text-align: left;
+      }
+      .question-style:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.2);
+      }
+      
+      .question-style {  
+        object-fit: cover;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        
+        margin-left: auto;
+        margin-right: auto;
+        }
+      
+      .question-content {
+        padding: 15px;
+        height: 90px;
+        text-overflow: ellipsis;
+        }
+      
+      .question-grid {
+        padding: 10px;
+        border:1px solid black;
+        border-color: #008CBA;
+        margin: auto;
+        margin-left: 10%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: auto;
+        grid-gap: 1rem;
+        }
+      
+        .question-image-style{
+        display: block;
+        }
+
+        .question-label{
+          color: black;
+          font-weight: bold;
+          display:block;
+          margin-bottom: 10px;
+          font-size: 30px;
+        }
+
+        .answer-submit-button{
+          color: black;
+          font-weight: bold;
+          display:block;
+          max-width: 300px;
+          margin-bottom: 10px;
+          font-size: 30px;
+        }
+        
+
+
+
+
+        .card-attempted {
+          /* Add shadows to create the "card" effect */
+          max-width: 800px;
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          transition: 0.3s;
+          border: 1px solid #ddd;
+          padding: 10px;
+          margin: auto;
+        }
+        
+        /* On mouse-over, add a deeper shadow */
+        .card-attempted:hover {
+          box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+        
+        /* Add some padding inside the card container */
+        .container {
+          padding: 2px 16px;
+        }
+      
+      
+      .card-attempted-style {
+      background-color: #66A5AD;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      color: black;
+      text-align: left;
+      }
+      .card-attempted-style:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.2);
+      }
+      .card-attempted-bottom {
+        margin: auto;
+        padding: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        background-color: #C4DFE6;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        color: black;
+        text-align: left;
+        }
+      
+      .image-attempted-style {  
+        object-fit: cover;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        
+        margin-left: auto;
+        margin-right: auto;
+        }
+      
+      .card-attempted-content {
+        padding: 15px;
+        height: 90px;
+        text-overflow: ellipsis;
+        }
+      
+      .card-attempted-grid {
+        margin: auto;
+        margin-left: 10%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: auto;
+        grid-gap: 1rem;
+        }
+      
+        .card-attempted-image-style{
+        display: block;
+        }
+
+        .horizontal-center {
+          margin: 0;
+          top: 50%;
+          -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
+        }
+  
+
+        
+.progress-card-style {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  color: black;
+  text-align: left;
+  }
+  .progress-card-style:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .progress-image-style {  
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    }
+  
+  .progress-card-content {
+    padding: 15px;
+    height: 350px;
+    text-overflow: ellipsis;
+    }
+  
+  .progress-card-grid {
+    margin: auto;
+    margin-left: 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 1rem;
+    }
+  
+    .progress-card-image-style{
+    display: block;
+    }
