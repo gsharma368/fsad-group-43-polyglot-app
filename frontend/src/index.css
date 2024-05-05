@@ -623,3 +623,6 @@ text-align: left;
     .progress-card-image-style{
     display: block;
     }
+  .nav-link:hover {
+      color: white !important;
+    }
