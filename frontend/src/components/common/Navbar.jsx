@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FaBook, FaChartLine, FaUser, FaSignOutAlt, FaSearch } from 'react-icons/fa';
 import UserService from '../service/UserService';
 import { useNavigate } from 'react-router-dom';
 
@@ -15,21 +16,31 @@ function Navbar() {
         if (confirmDelete) {
             UserService.logout();
         }
-        
+
         navigate("/login")
     };
 
 
     return (
-        <nav styles='margin-bottom: 10px'>
-            <ul>
-                {!isAuthenticated && <li><Link to="/">PolyGlot - Language Learning Application</Link></li>}
-                {isAuthenticated && <li><Link to="/profile">Profile</Link></li>}
-                {isAuthenticated && <li><Link to="/masterCourses">Explore Courses</Link></li>}
-                {isAuthenticated && <li><Link to="/myCourses">My Courses</Link></li>}
-                {isAuthenticated && <li><Link to="/progress">Progress Tracking</Link></li>}
-                {isAuthenticated && <li><Link to="/" onClick={handleLogout}>Logout</Link></li>}
+        <nav className="navbar">
+            <div className="navbar-icon">
+                <img src={process.env.PUBLIC_URL + '/favicon.ico'} alt="Logo" />
+            </div>
+
+
+            <ul className="navbar-list">
+                {!isAuthenticated && <li className="navbar-item spaced"><Link to="/"><FaBook /> PolyGlot - Language Learning Application</Link></li>}
+                {isAuthenticated && <li className="navbar-item spaced"><Link to="/masterCourses"><FaSearch /> Explore Courses</Link></li>}
+                {isAuthenticated && <li className="navbar-item spaced"><Link to="/myCourses"><FaBook /> My Courses</Link></li>}
+                {isAuthenticated && <li className="navbar-item spaced"><Link to="/progress"><FaChartLine /> Progress Tracking</Link></li>}
             </ul>
+            {isAuthenticated &&
+                <ul className="navbar-list">
+                    <li className="navbar-item spaced"><Link to="/profile"><FaUser /> Profile</Link></li>
+                    <li className="navbar-item spaced"><Link to="/" onClick={handleLogout}><FaSignOutAlt /> Logout</Link></li>
+                </ul>
+            }
+
         </nav>
     );
 }
