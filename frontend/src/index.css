@@ -13,7 +13,7 @@
 }
 
 nav {
-  background-color: #333;
+  background-color: rgb(199, 83, 41);
   padding: 10px 0;
   padding: 20px;
   font-size: 20px;
@@ -175,7 +175,7 @@ button[type="submit"]:hover {
 
 /* FOOTER STYKLING */
 .footer {
-  background-color: black;
+  background-color: rgb(199, 83, 41);
   color: white;
   padding: 20px;
   text-align: center;
@@ -836,12 +836,10 @@ p {
 }
 
 .navbar-icon {
-  margin-right: 10px;
-  width: 80px;
-  /* Adjust as needed */
-  height: 80px;
-  /* Adjust as needed */
-  /* Ensures that the image doesn't overflow its container */
+   margin-right: 10px;
+  padding-left: 8px;
+  display: flex;
+  align-items: center;
 }
 
 .profile-page-container {
@@ -906,5 +904,12 @@ p {
   background-color: #45a049;
   /* Adjust as needed */
   color: white;
+}
+.nav-link:hover {
+      color: white !important;
+    }
+.logo { 
+  height: 48px;
+width: 48px; 
 }
 
