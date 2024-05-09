@@ -14,7 +14,7 @@
   }
   
   nav {
-  background-color: #333;
+  background-color: rgb(199, 83, 41);
   padding: 10px 0;
   padding: 20px;
   font-size: 20px;
@@ -176,7 +176,7 @@
   
   /* FOOTER STYKLING */
   .footer{
-  background-color: black;
+  background-color: rgb(199, 83, 41);
   color: white;
   padding: 20px;
   text-align: center;
