@@ -175,15 +175,14 @@ button[type="submit"]:hover {
 
 /* FOOTER STYKLING */
 .footer {
-  background-color: rgb(199, 83, 41);
+  background-color:#333;
   color: white;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   position: fixed;
   bottom: 0;
   width: 100%;
 }
-
 
 
 
