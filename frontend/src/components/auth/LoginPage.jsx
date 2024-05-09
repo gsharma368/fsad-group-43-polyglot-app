@@ -29,7 +29,7 @@ const handleSubmit = async (e) => {
             localStorage.setItem('token', userData.token)
             localStorage.setItem('role', userData.role)
             localStorage.setItem('currentContinueLearningCourse', null)
-            navigate('/profile')
+            navigate('/masterCourses')
         }else{
             alert(userData.message + ". Please use correct credentials.")
         }

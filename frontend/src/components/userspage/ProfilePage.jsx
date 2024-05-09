@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { FaUser } from 'react-icons/fa';
 import UserService from '../service/UserService';
 import { Link } from 'react-router-dom';
+
 
 
 
@@ -24,13 +26,18 @@ function ProfilePage() {
 
     return (
         <div className="profile-page-container">
-            <h2>Profile Information</h2>
-            <p>Name: {profileInfo.name}</p>
-            <p>Email: {profileInfo.email}</p>
-            <p>City: {profileInfo.city}</p>
-            { 
-                <button class="button button2"><Link to={`/update-user/${profileInfo.id}`}>Update This Profile</Link></button>
-            }
+            <div className="profile-card">
+                <div className="icon-container">
+                    <FaUser size={50} />
+                </div>
+                <h2>Profile Information</h2>
+                <ul className="profile-info-list">
+                    <li><strong>Name:</strong> {profileInfo.name}</li>
+                    <li><strong>Email:</strong> {profileInfo.email}</li>
+                    <li><strong>City:</strong> {profileInfo.city}</li>
+                </ul>
+                <button className="profile-update-button"><Link to={`/update-user/${profileInfo.id}`}>Update This Profile</Link></button>
+            </div>
         </div>
     );
 }
