@@ -24,7 +24,7 @@ function Navbar() {
     return (
         <nav className="navbar">
             <div className="navbar-icon">
-                <img src={process.env.PUBLIC_URL + '/favicon.ico'} alt="Logo" />
+                <img src={process.env.PUBLIC_URL + '/favicon.ico'} alt="Logo" className="logo" />
             </div>
 
 
