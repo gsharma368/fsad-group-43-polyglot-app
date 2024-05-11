@@ -28,14 +28,11 @@ function MyCoursesPage() {
 
   const unenrollFromThisCourseButton = async (courseId) => {
     try {
-      setUnenrollModalIsOpen(true);
       const token = localStorage.getItem('token');
-      if (unenrollModalIsOpen) {
-        const response = await UserService.unenrollFromThisCourseButton(courseId, token);
-        setUnEnrollResponse(response)
-        window.alert(response.message)
-        fetchCoursesInfo();
-      }
+      const response = await UserService.unenrollFromThisCourseButton(courseId, token);
+      setUnEnrollResponse(response)
+      window.alert(response.message)
+      fetchCoursesInfo();
     } catch (error) {
       console.error('Error enrolling in course:', error);
     }
@@ -86,7 +83,7 @@ function MyCoursesPage() {
       <h2 className="course-heading">My Enrolled Courses Page</h2>
       <div className="course-grid">
         {coursesInfo.map(course => (
-          <div className="course-card">
+          <div className="course-card" key={course.id}>
             <img src={`https://source.unsplash.com/random/300x140?course-${course.id}`} className="course-image"></img>
             <div className="course-content">
               <h5><b>{course.title}</b></h5>
@@ -94,7 +91,10 @@ function MyCoursesPage() {
             </div>
             <div className="course-actions">
               <button className="btn-continue" onClick={() => setCurrentContinueLearningCourse(course.id)}>Keep Improving - Continue Course</button>
-              <button className='btn-unenroll' onClick={() => unenrollFromThisCourseButton(course.id)}>Un-Enroll</button>
+              <button className='btn-unenroll' onClick={() => {
+                setCurrentCourseId(course.id);
+                setUnenrollModalIsOpen(true);
+              }}>Un-Enroll</button>
             </div>
           </div>
         ))}
@@ -166,7 +166,10 @@ function MyCoursesPage() {
       ':hover': {
         backgroundColor: '#0056b3',
       },
-    }} onClick={unenrollFromThisCourseButton}>OK</button>
+    }} onClick={() => {
+      unenrollFromThisCourseButton(currentCourseId);
+      setUnenrollModalIsOpen(false);
+    }}>OK</button>
   </div>
 </Modal>
     </div>
